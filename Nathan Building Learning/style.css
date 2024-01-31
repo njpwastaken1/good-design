@@ -1,0 +1,18 @@
+* {
+  font-family: 'Archivo', sans-serif;
+  /* outline: 1px solid red; */
+}
+
+.hero-bg {
+  background-image: url(images/Hero-Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.margin-negative {
+  margin-top: -3rem;
+}
+
+.card {
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.02);
+}

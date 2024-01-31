@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathan Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              grey: '#212121',
+              orange: '#CC5401',
+              lightWhite: '#FCFBFD',
+              cardWhite: '#FBFBFB',
+              bodyColor: '#ECEEF1',
+              gold: '#F4A52D',
+            },
+            screens: {
+                ts: '390px',
+                sm: '480px',
+                md: '768px',
+                lg: '1080px',
+                xl: '1440px',
+                },
+
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-bodyColor">
+    <div class="hero-bg">
+      <header>
+        <div class="mx-auto px-4 max-w-[1400px] grid grid-cols-[auto_1fr_auto]">
+          <!-- Left Column for Logo -->
+          <div class="">
+            <!-- Your logo goes here -->
+            <img src="images/logo.png" alt="Logo" class="h-90 w-90" />
+            <!-- Adjust the height and width according to your design -->
+          </div>
+
+          <nav
+            class="items-center hidden justify-center space-x-8 sm:hidden lg:flex"
+          >
+            <a href="#" class="text-white font-medium text-lg">About us</a>
+            <a href="#" class="text-white font-medium text-lg">Our Services</a>
+            <a href="#" class="text-white font-medium text-lg">Gallery</a>
+            <a href="#" class="text-white font-medium text-lg">testimonials</a>
+            <a href="#" class="text-white font-semibold text-lg">Contact us</a>
+          </nav>
+
+          <div class="flex items-center justify-end">
+            <a href="#" class="bg-orange px-8 py-3 text-white text-sm"
+              >Get a Free Quote</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div
+          class="mx-auto px-4 max-w-[1400px] grid grid-cols-[auto_1fr_auto] pt-36 pb-32 ts:pt-60 lg:pt-60 lg:pb-32"
+        >
+          <div class="grid gap-4">
+            <h1 class="text-white text-5xl ts:text-6xl sm:leading-tight">
+              Quality Construction <span class="font-bold">Solutions</span>
+            </h1>
+            <p class="text-2xl text-white leading-9 max-w-2xl">
+              Meet CML Building, your go-to source for superb high-quality
+              building solutions in the Exeter, UK region.
+            </p>
+            <a href="#" class="bg-orange px-6 py-3 text-white text-sm max-w-max"
+              ><div class="flex gap-4 items-center">
+                <p>Transform Your Home</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="28"
+                  viewBox="0 0 27 28"
+                  fill="none"
+                >
+                  <path
+                    d="M14.9533 14L9.77832 8.825L10.5748 8.0285L16.5463 14L10.5748 19.9715L9.77832 19.175L14.9533 14Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+            <div class="flex gap-4">
+              <img src="images/review.png" />
+              <p class="text-white font-semibold text-base">
+                Trusted by 25 Homeowners
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="margin-negative">
+      <div
+        class="mx-auto px-4 max-w-[1400px] flex flex-col gap-4 ts:gap-4 ts:flex ts:flex-col  sm:items-center lg:grid grid-cols-5 py-6 bg-grey"
+      >
+        <div class="ts:min-w-full">
+          <input
+            type="text"
+            placeholder="Full Name"
+            class="h-46 bg-lightWhite px-3 min-w-full py-3.5"
+          />
+        </div>
+        <div class="sm:min-w-full">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="min-w-full py-3.5 px-3"
+          />
+        </div>
+        <div class="sm:min-w-full">
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="min-w-full py-3.5 px-3"
+          />
+        </div class="sm:min-w-full">
+        <div class="sm:min-w-full">
+          <input
+            type="text"
+            placeholder="Type Of Services"
+            class="min-w-full py-3.5 px-3"
+          />
+        </div class="sm:min-w-full">
+        <div class="justify-end min-w-full min-h-full">
+          <input
+            type="submit"
+            class="bg-orange min-w-full text-white min-h-full py-3.5"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="mx-auto px-4 max-w-[1400px] grid  grid-rows-1 py-24 md:grid-cols-2 md:gap-8">
+            <div class="flex gap-6 flex-col items-start justify-center">
+                <h3 class="text-5xl font-semibold lg:max-w-xl	">CML is dedicated to <span class="text-orange font-bold">evolving buildings</span></h3>
+                <p class="text-base leading-6">Embark on your next venture with CML Building, where we infuse a delightful combination of expertise and a lighthearted approach into every project. Our commitment to excellence is paired with a unique touch of enthusiasm, ensuring that your journey with us is not just a dry, serious saga, but a refreshing experience that stands out from our competition</p>
+                <a href="#" class="bg-orange px-6 py-3 text-white text-sm max-w-fit">
+                    <div class="flex gap-4 items-center">
+                        <p>Transform Your Home</p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27"
+                            height="28"
+                            viewBox="0 0 27 28"
+                            fill="none"
+                        >
+                            <path
+                                d="M14.9533 14L9.77832 8.825L10.5748 8.0285L16.5463 14L10.5748 19.9715L9.77832 19.175L14.9533 14Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center hidden md:flex md:justify-end">
+                <img src="images/image-one.png" alt="Image One" class="max-w-[100%] max-h-[90%] items-end object-cover md:max-h-[100%]">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-grey">
+       <div class="mx-auto px-4 max-w-[1400px] py-24">
+        <div class="grid grid-rows-1 pb-4 md:grid-cols-1 md:gap-4">
+            <h2 class="text-white font-bold text-5xl text-center">Professions In</h2>
+        </div>
+        <div class="grid pt-20 grid-rows-3 gap-14 md:grid-cols-3 md:grid-rows-1 md:gap-4">
+            <div class="items-center  flex flex-col gap-6">
+                <img src="images/Building.png" alt="" class="min-w-[100%] h-72 object-cover">
+                <h4 class="text-white text-center font-medium text-4xl">Building Services</h4>
+                <p class="text-white text-center text-lg leading">We specialize in refurbishments, extensions, conversions, maintenance, and various construction projects for property solutions</p>
+                <a href="#" class="bg-orange px-8 py-3 text-white text-sm"
+              >Learn More</a
+            >
+            </div>
+            <div class="items-center  flex flex-col gap-6">
+                <img src="images/plumbing.png" alt="" class="min-w-[100%] h-72 object-cover">
+                <h4 class="text-white text-center font-medium text-4xl">Plumbing Services</h4>
+                <p class="text-white text-center text-lg leading">Specializing in expert installations and repairs for kitchens, bathrooms, boilers, and central heating systems, ensuring optimal functionality</p>
+                <a href="#" class="bg-orange px-8 py-3 text-white text-sm"
+              >Learn More</a
+            >
+            </div>
+            <div class="items-center  flex flex-col gap-6">
+                <img src="images/electrical.png" alt="" class="min-w-[100%] h-72 object-cover">
+                <h4 class="text-white text-center font-medium text-4xl">Electrical Services</h4>
+                <p class="text-white text-center text-lg leading">Proficient in electrical rewiring, central heating installations, and circuit repairs for reliable and comprehensive solutions.</p>
+                <a href="#" class="bg-orange px-8 py-3 text-white text-sm"
+              >Learn More</a
+            >
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <section>
+        <div class="mx-auto px-4 max-w-[1400px] py-24">
+            <div class="grid grid-rows-1 pb-4 md:grid-cols-1 md:gap-4">
+                <h2 class="font-bold text-5xl text-black max-w-lg text-center mx-auto">25 Customers Gave Us <span>5-Star Ratings</span></h2>
+            </div>
+            <div class="grid pt-20 grid-rows-3 gap-6 md:grid-cols-3 md:grid-rows-1 md:gap-4">
+                    <div class="flex flex-col gap-4 bg-cardWhite card p-5">
+                        <div class="flex flex-row items-center gap-5">
+                            <img src="images/person-one.svg" alt="">
+                            <p class="font-bold text-xl	">Anna Knight</p>
+                        </div>
+                        <p>'Chris did such a wonderful job with our kitchen - I'm so pleased that I'm now planning the next room!'</p>
+                        <div class="text-gold"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-cardWhite card p-5">
+                        <div class="flex flex-row items-center gap-5">
+                            <img src="images/person-one.svg" alt="">
+                            <p class="font-bold text-xl	">David Tent</p>
+                        </div>
+                        <p>'I have used Chris' services on a number of occasions the standard of work has been excellent,</p>
+                        <div class="text-gold"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-cardWhite card p-5">
+                        <div class="flex flex-row items-center gap-5">
+                            <img src="images/person-one.svg" alt="">
+                            <p class="font-bold text-xl	">Mark Lewis</p>
+                        </div>
+                        <p>'We have used Chris a few times now for skimming work his prices were very reasonable.</p>
+                        <div class="text-gold"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                    </div>
+            </div>
+    </section>
+    
+  </body>
+</html>
